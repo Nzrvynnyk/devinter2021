@@ -1,3 +1,40 @@
+commit 7e8fd07e2b85a52a8b5918daa752d73ce5d3d293
+Merge: 193838f 5d6bb37
+Author: Nazar <vynnyk_naz@ukr.net>
+Date:   Wed Jun 9 19:47:55 2021 +0300
+
+    Merge branch 'master' of https://github.com/Nzrvynnyk/devinter2021
+
+commit 193838f66c804357baf78413c662fc35cd2451e4
+Author: Nazar <vynnyk_naz@ukr.net>
+Date:   Wed Jun 9 19:47:47 2021 +0300
+
+    update status
+
+commit 5d6bb37ec52338d81d45782a38f4155f1a437bdf
+Author: Nzrvynnyk <80759146+Nzrvynnyk@users.noreply.github.com>
+Date:   Wed Jun 9 19:46:45 2021 +0300
+
+    rm log.txt
+
+commit be22cf15c88f5ef0191281df70609f21084a2f08
+Author: Nazar <vynnyk_naz@ukr.net>
+Date:   Wed Jun 9 19:43:44 2021 +0300
+
+    Moved log.txt to task1
+
+commit b19ae22c05318a69f2785104064737b89cef2f22
+Author: Nzrvynnyk <80759146+Nzrvynnyk@users.noreply.github.com>
+Date:   Wed Jun 9 19:28:40 2021 +0300
+
+    Delete README.md
+
+commit 368337da010ab658e990d0bc4ca0eb4c889e1d3b
+Author: Nazar <vynnyk_naz@ukr.net>
+Date:   Wed Jun 9 16:48:20 2021 +0300
+
+    add git log
+
 commit 50906bf5b027529d2ce7dbbe0b7795a6860cc3cf
 Author: Nazar <vynnyk_naz@ukr.net>
 Date:   Wed Jun 9 16:44:13 2021 +0300
