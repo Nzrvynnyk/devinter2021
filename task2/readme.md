@@ -28,7 +28,9 @@ http://prntscr.com/159nag6
 http://prntscr.com/159nf68
 
 2-3 do in one bash scripts for 3 i used Bootsrapping and amazon Linux system
-
+http://ec2-18-185-172-126.eu-central-1.compute.amazonaws.com/
+http://ec2-18-185-172-126.eu-central-1.compute.amazonaws.com/log.html
+## sorry for the color, so that no one accidentally copied)
 
 ```
 #!/bin/bash
