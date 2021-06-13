@@ -30,7 +30,6 @@ http://prntscr.com/159nf68
 2-3 do in one bash scripts for 3 i used Bootsrapping and amazon Linux system
 
 //
-
 #!/bin/bash
 echo "Start"
 sudo yum -y update
@@ -42,5 +41,4 @@ sudo service httpd start
 sudo systemctl enable httpd
 curl localhost/index.html > /var/www/html/log.html
 echo "FINISH"
-
 //
