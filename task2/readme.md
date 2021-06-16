@@ -28,12 +28,19 @@ http://prntscr.com/159nag6
 http://prntscr.com/159nf68
 
 2-3 do in one bash scripts for 3 i used Bootsrapping and amazon Linux system
+http://ec2-18-185-172-126.eu-central-1.compute.amazonaws.com/
+http://ec2-18-185-172-126.eu-central-1.compute.amazonaws.com/log.html
+## sorry for the color, so that no one accidentally copied)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ```
 =======
 //
 >>>>>>> 275d84b5adcfa86b5f3db9315901a4826faa9f79
+=======
+```
+>>>>>>> 62e7d714f6df51922ae279580fafa72b4faae697
 #!/bin/bash
 echo "Start"
 sudo yum -y update
@@ -46,7 +53,11 @@ sudo systemctl enable httpd
 curl localhost/index.html > /var/www/html/log.html
 echo "FINISH"
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```
 =======
 //
 >>>>>>> 275d84b5adcfa86b5f3db9315901a4826faa9f79
+=======
+```
+>>>>>>> 62e7d714f6df51922ae279580fafa72b4faae697
