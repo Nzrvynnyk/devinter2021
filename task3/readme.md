@@ -17,14 +17,7 @@ http://prntscr.com/15h9rfy
 
 
 http://prntscr.com/15hggk3
-and env, and sh scrip for change env
-task3.sh
-```#!bin/bash
-echo -e "Nazar Vynnyk DEVOPS=$DEVOPS" > index.html
-mv index.html /var/www/html/index.html
 
-apachectl -D FOREGROUND
-```
 ## Dockerfile
 ```
 FROM ubuntu:18.04
@@ -49,8 +42,14 @@ EXPOSE 80
 CMD ./task3.sh
 #CMD /root/run_apache.sh
 ```
+## and env, and sh scrip for change env
+task3.sh
+```#!bin/bash
+echo -e "Nazar Vynnyk DEVOPS=$DEVOPS" > index.html
+mv index.html /var/www/html/index.html
+apachectl -D FOREGROUND
+```
 sudo docker run -e DEVOPS=Nazarvynnyk -it -p 80:80 task4
-
 http://prntscr.com/15m486m
 http://prntscr.com/15m4t2d
 
