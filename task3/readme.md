@@ -105,7 +105,8 @@ version: '3'
 
 services:
  web:
-     image: nvynnyk/devintership
+     image: task3
+     container_name: testtaks
      ports:
      - 80:80
      environment:
@@ -130,6 +131,13 @@ services:
 http://prntscr.com/15p6qy6
 
 add .env file.
+```
+DEVOPS=DEVOPS="VynnykA1111AAA"
+
+hml page change value to VynnykA1111AAA"
+http://prntscr.com/15p9ygv
+
+
 
 Done!
 
