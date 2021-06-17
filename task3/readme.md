@@ -106,26 +106,80 @@ version: '3'
 services:
  web:
      image: task3
-     container_name: testtaks
-     ports:
+     container_name: testtask3
+     ports: 
      - 80:80
      environment:
       - DEVOPS=${DEVOPS}
-     env_file:
-      - .env
+     #env_file:
+     #- .env
 
+ web1:
+     image: task3
+     container_name: web1
+     ports:
+     - 90:90
+     environment:
+      - DEVOPS=${DEVOPS}
+     #env_file:
+     #- .env
+ web2:
+     image: task3
+     container_name: web2
+     ports:
+     - 123:123
+     environment:
+      - DEVOPS=${DEVOPS}
+     #env_file:
+     #- .env
+ web3:
+     image: task3
+     container_name: web3
+     ports:
+     - 220:220
+     environment:
+      - DEVOPS=${DEVOPS}
+     #env_file:
+     #- .env
+ web4:
+     image: task3
+     container_name: web4
+     ports:
+     - 540:540
+     environment:
+      - DEVOPS=${DEVOPS}
+     #env_file:
+     #- .env
+ web5:
+     image: task3
+     container_name: web5
+     ports:
+     - 633:633
+     environment:
+      - DEVOPS=${DEVOPS}
+     #env_file:
+     #- .env
+
+
+   
  java:
     image: 0ea726542de5
     restart: always
+    depends_on:
+      - db
 
- db:
+ db: 
    image: postgres:11.4-alpine
    container_name: postgres
-   ports:
+   ports: 
    - 5432:5432
-   volumes:
+   volumes: 
    - ./pg_data:/var/lib/postgresql/data/pgdata
-```   
+
+
+
+```  
+http://prntscr.com/15pgf0n
    ### run all containers
    docker-compose up 
 http://prntscr.com/15p6qy6
