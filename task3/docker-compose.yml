@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+ web:
+     image: nvynnyk/devintership
+     ports:
+     - 80:80
+     environment:
+      - DEVOPS=${DEVOPS}
+     env_file:
+      - .env
+
+ java:
+    image: 0ea726542de5
+    restart: always
+
+ db:
+   image: postgres:11.4-alpine
+   container_name: postgres
+   ports:
+   - 5432:5432
+   volumes:
+   - ./pg_data:/var/lib/postgresql/data/pgdata
