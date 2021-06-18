@@ -1,7 +1,7 @@
 ### Task5 Ansible 
 
-I wiil be use Aws Linux.
-creted 3 instances 
+I will be used Aws Linux.
+created 3 instances 
 AnsibleMaster and web1 web2 
 http://prntscr.com/15stkmc
 install Ansible use 
@@ -54,7 +54,7 @@ http://prntscr.com/15sulxg
 
 http://prntscr.com/15su12a
 
-### connect to web1 instances chack python pip and Docker version 
+### connect to web1 instances check python-pip and Docker version 
 http://prntscr.com/15suwzh 
 
 
