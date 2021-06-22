@@ -113,13 +113,15 @@ we need next: httpd, Mysql, phpmyadmin
       docker_container:
         name: apache
         image: httpd
-        ports: ['80:80']
+        ports:
+          - 80:80
 
     - name: mysql container
       docker_container:
         name: mysql
         image: mysql
-        ports: ['856:856']
+        ports:
+          - 856:856
         hostname: mysql
         env:
           MYSQL_ROOT_PASSWORD: "{{ mysqlroot_password }}"
@@ -131,11 +133,12 @@ we need next: httpd, Mysql, phpmyadmin
       docker_container:
         name: phpmyadmin
         image: phpmyadmin
-        ports: ['81:80']
+        ports: 
+          - 81:81
         env:
           PMA_HOST: "{{ phpmyadmin_db_ip }}"
           PMA_USER: "{{db_user}}"
-          PMA_PASSWORD: "{{ phpmyadmin_password }}"
+          PMA_PASSWORD: "{{ phpmyadmin_password }}"  
 ````
 create env file with passwprd
 used ansible-vault create pass.yml 
