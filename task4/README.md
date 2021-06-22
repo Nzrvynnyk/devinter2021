@@ -125,7 +125,7 @@ we need next: httpd, Mysql, phpmyadmin
           MYSQL_ROOT_PASSWORD: "{{ mysqlroot_password }}"
           MYSQL_USER: "{{db_user}}"
           MYSQL_PASSWORD: "{{ mysqlpassword }}"
-          MYSQL_DATABASE: Task5
+          MYSQL_DATABASE: mydata
 
     - name: phpmyadmin container
       docker_container:
