@@ -1,15 +1,14 @@
----
 - hosts: aws
   become: true
   tasks:
     - name: Install Python
       yum: name=python state=latest
-    
+
     - name: install pip
       yum: name=python-pip state=latest
 
     - name: install Docker
-      yum: name=Docker state=latest
+      yum: name=docker state=latest
 
 
     - name: assicurati che docker sia attivo
@@ -17,8 +16,8 @@
          name: docker
          state: started
          enabled: yes
- 
+
     - name: restart docker
-      service: 
-         name: docker 
+      service:
+         name: docker
          state: restarted

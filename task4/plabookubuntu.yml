@@ -1,0 +1,78 @@
+---
+- hosts: ubuntu
+  become: true
+  vars_files:
+    - pass.yml
+  tasks:
+
+    - name: Update apt cache
+      apt: update_cache=yes cache_valid_time=3600
+
+    - name: Upgrade all apt packages
+      apt: upgrade=dist
+
+    - name: Install dependencies
+      apt:
+        name: "{{ packages }}"
+        state: present
+        update_cache: yes
+      vars:
+        packages:
+        - apt-transport-https
+        - ca-certificates
+        - curl
+        - software-properties-common
+        - gnupg-agent
+      
+
+
+    - name: install python package manager
+      apt:
+       name: python3-pip 
+
+
+   
+    - name: Install docker Package manager
+      apt:
+       name:
+         - python3-docker
+         - docker-compose 
+
+
+    - name: Add user to docker group
+      user:
+        name: "{{ansible_user}}"
+        group: docker
+
+
+        
+    - name: httpd container
+      docker_container:
+        name: apache
+        image: httpd
+        ports:
+          - 80:80
+
+    - name: mysql container
+      docker_container:
+        name: mysql
+        image: mysql
+        ports:
+          - 856:856
+        hostname: mysql
+        env:
+          MYSQL_ROOT_PASSWORD: "{{ mysqlroot_password }}"
+          MYSQL_USER: "{{db_user}}"
+          MYSQL_PASSWORD: "{{ mysqlpassword }}"
+          MYSQL_DATABASE: Task5
+
+    - name: phpmyadmin container
+      docker_container:
+        name: phpmyadmin
+        image: phpmyadmin
+        ports: ['81:80']
+        env:
+          PMA_HOST: "{{ phpmyadmin_db_ip }}"
+          PMA_USER: "{{db_user}}"
+          PMA_PASSWORD: "{{ phpmyadmin_password }}"      
+        
