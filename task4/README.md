@@ -1,4 +1,4 @@
-### Task5 Ansible 
+### Task4 Ansible 
 
 I will be used Aws Linux.
 created 3 instances 
@@ -127,7 +127,7 @@ we need next: httpd, Mysql, phpmyadmin
           MYSQL_ROOT_PASSWORD: "{{ mysqlroot_password }}"
           MYSQL_USER: "{{db_user}}"
           MYSQL_PASSWORD: "{{ mysqlpassword }}"
-          MYSQL_DATABASE: Task5
+          MYSQL_DATABASE: mydata
 
     - name: phpmyadmin container
       docker_container:
