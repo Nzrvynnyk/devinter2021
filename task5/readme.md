@@ -92,7 +92,8 @@ pipeline {
 Add Global credentials with secret text
 http://prntscr.com/16xow94
 add Evironment.
-run docker 
+run docker
+http://prntscr.com/16xqfwy
 ```docker run -d -it -e $EXAMPLE_KEY
 ```
 ```
