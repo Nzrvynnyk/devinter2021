@@ -24,7 +24,6 @@ sudo docker logs 5d38e97cd017
 copy a password to proceed to installation                                                     
 install plugins, and created first Admin user
 http://prntscr.com/16vd1hu
-http://prntscr.com/16vd647
 
 ### Add build agent used Launch agent by conncting in to the master 
 ```
@@ -65,6 +64,7 @@ pipeline {
 ```
 ### Docker image from task4 
 http://prntscr.com/16wr5h1
+http://prntscr.com/16xq1zq
 ```
 pipeline {
     agent {label 'aws' }
