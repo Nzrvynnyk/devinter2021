@@ -45,7 +45,8 @@ ssh-keygen -f ~/.ssh/jenkins_agent_key
 ```
 add private key to credantials 
 Run docker container 
-```docker run -d --rm --name=agent1 -p 43:22 \
+```
+docker run -d --rm --name=agent1 -p 43:22 \
 -e "JENKINS_AGENT_SSH_PUBKEY=$PUB_KEY" \
 jenkins/ssh-agent
 ```
