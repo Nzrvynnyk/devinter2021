@@ -38,14 +38,16 @@ http://prntscr.com/16vz9ap
 connect a new node2 lauch via SSH
 use ssh to create build agent 
 http://prntscr.com/16vw1mn
-
+### Install ssh agen inside docker
+http://prntscr.com/174tilw
+http://prntscr.com/174ua8h
 
 ### Date and time
 
 http://prntscr.com/16vio4p
 
 ### Pipeline docker ps -a 
-http://prntscr.com/16w5unm
+http://prntscr.com/174ua8h
 ```
 pipeline {
     agent { label 'main' }
