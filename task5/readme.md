@@ -17,7 +17,7 @@ EXTRA:
 ### Task 1 Install Jenkis
 ```
 sudo docker pull jenkins:2.60.3
-sudo docker run -d -p 8080:8080 -p 50000:50000 jenkins:2.60.3
+docker run -u root --restart always -d -p 8090:8080 --name jenkins -p 50000:50000 -v jenkins-data:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock jenkinsci/blueocean
 sudo docker ps 
 sudo docker logs 5d38e97cd017  
 ```
@@ -39,6 +39,17 @@ connect a new node2 lauch via SSH
 use ssh to create build agent 
 http://prntscr.com/16vw1mn
 ### Install ssh agen inside docker
+created ssh-key 
+```
+ssh-keygen -f ~/.ssh/jenkins_agent_key
+```
+add private key to credantials 
+Run docker container 
+```docker run -d --rm --name=agent1 -p 43:22 \
+-e "JENKINS_AGENT_SSH_PUBKEY=$PUB_KEY" \
+jenkins/ssh-agent
+```
+Add agent1 use ssh key 
 http://prntscr.com/174tilw
 http://prntscr.com/174ua8h
 
