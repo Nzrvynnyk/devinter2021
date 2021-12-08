@@ -1,0 +1,16 @@
+nazar@nzrb:~/DevOps_online_Vinnitsia_2021Q1/m1/test1.1$ git reflog
+a8e1938 (HEAD -> master, origin/master, origin/develop, origin/HEAD, develop) HEAD@{0}: merge develop: Fast-forward
+0b5f0bd HEAD@{1}: checkout: moving from develop to master
+a8e1938 (HEAD -> master, origin/master, origin/develop, origin/HEAD, develop) HEAD@{2}: commit (merge): Fix git conflict
+4675d47 (origin/images, images) HEAD@{3}: merge images: Fast-forward
+0b5f0bd HEAD@{4}: checkout: moving from styles to develop
+4e35e9f (origin/styles, styles) HEAD@{5}: commit: change index
+2b0a632 HEAD@{6}: commit: add styles
+0b5f0bd HEAD@{7}: checkout: moving from develop to styles
+0b5f0bd HEAD@{8}: checkout: moving from images to develop
+4675d47 (origin/images, images) HEAD@{9}: commit: change index, images
+b670d33 HEAD@{10}: commit: add images
+0b5f0bd HEAD@{11}: checkout: moving from develop to images
+0b5f0bd HEAD@{12}: checkout: moving from master to develop
+0b5f0bd HEAD@{13}: commit: Init commit
+48a7061 HEAD@{14}: clone: from https://github.com/Nzrvynnyk/DevOps_online_Vinnitsia_2021Q1.git
